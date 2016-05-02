@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MARS</string>
+    <string name="action_settings">Settings</string>
+    <string name="map">Map</string>
+    <string name="buttonControl">Buttons</string>
+    <string name="action_map">Joystick</string>
+    <string name="action_jo">Joystick</string>
+    <string name="action_vi">Video stream</string>
+    <string name="joystick">Joystick</string>
+</resources>

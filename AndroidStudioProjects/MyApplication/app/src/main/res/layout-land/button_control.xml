@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.system.myapplication.MainActivity"
+    android:background="#959292"
+    android:longClickable="false">
+
+    <!--
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forward"
+        android:id="@+id/forwardButton"
+        android:onClick="goForward"
+        android:layout_above="@+id/stopButton"
+        android:layout_toRightOf="@+id/leftButton"
+        android:layout_toLeftOf="@+id/rightButton"
+        android:layout_toStartOf="@+id/rightButton" />
+-->
+
+
+
+<!--
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:id="@+id/backButton"
+        android:onClick="goBackwards"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/stopButton"
+        android:layout_alignStart="@+id/stopButton" />
+-->
+
+    <!--
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        android:id="@+id/stopButton"
+        android:onClick="stopMovement"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/connectButton"
+        android:layout_toEndOf="@+id/connectButton" />
+-->
+    <!--
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ConnectBluetooth"
+        android:id="@+id/connectButton"
+        android:onClick="connectToBluetooth"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+-->
+    <!--
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="left"
+        android:id="@+id/leftButton"
+        android:onClick="goLeft"
+        android:layout_below="@+id/connectButton"
+        android:layout_toLeftOf="@+id/stopButton"
+        android:layout_toStartOf="@+id/stopButton" />
+-->
+
+    <!--
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Right"
+        android:id="@+id/rightButton"
+        android:onClick="goRight"
+        android:layout_alignTop="@+id/stopButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+-->
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/forwardButton"
+        android:background="@drawable/up"
+        android:onClick="goForward"
+        android:layout_below="@+id/connectButton"
+        android:layout_toLeftOf="@+id/rightButton"
+        android:layout_toStartOf="@+id/rightButton"
+        android:layout_marginTop="24dp">
+    </Button>
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/backButton"
+        android:onClick="goBackwards"
+        android:background="@drawable/down"
+        android:layout_below="@+id/leftButton"
+        android:layout_alignLeft="@+id/forwardButton"
+        android:layout_alignStart="@+id/forwardButton" />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/leftButton"
+        android:onClick="goLeft"
+        android:background="@drawable/left"
+        android:layout_alignTop="@+id/rightButton"
+        android:layout_toLeftOf="@+id/forwardButton"
+        android:layout_toStartOf="@+id/forwardButton" />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/rightButton"
+        android:onClick="goRight"
+        android:background="@drawable/right"
+        android:layout_below="@+id/forwardButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/stopButton"
+        android:onClick="stopMovement"
+        android:background="@drawable/stop"
+        android:layout_above="@+id/backButton"
+        android:layout_toRightOf="@+id/leftButton"
+        android:layout_toEndOf="@+id/leftButton" />
+
+</RelativeLayout>
