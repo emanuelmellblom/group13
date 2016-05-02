@@ -1,0 +1,50 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.system.myapplication.MainActivity">
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="Menu"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/buttonmode"
+        android:orderInCategory="100"
+        android:title="@string/buttonControl"
+        android:actionLayout="@color/colorBlue"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/action_jo"
+        android:orderInCategory="100"
+        android:title="@string/action_jo"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/action_video"
+        android:orderInCategory="100"
+        android:title="@string/action_vi"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_map"
+        android:orderInCategory="100"
+        android:title="@string/map"
+        android:actionLayout="@color/colorBlue"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/connectToBluetooth"
+        android:orderInCategory="100"
+        android:title="Connect Bluetooth"
+        android:actionLayout="@color/colorBlue"
+        app:showAsAction="never"
+        >
+
+    </item>
+</menu>
